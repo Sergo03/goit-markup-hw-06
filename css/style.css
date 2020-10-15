@@ -301,15 +301,20 @@ img {
   display: block;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);=
+  border: 1px solid rgba(33, 33, 33, 0.2);
+ 
+  
 }
 
 .modal-form-input:focus {
   outline: none;
   border: 1px solid var(--secondary-text-color);
+  
 }
 .modal-form-input:hover{
   cursor: pointer;
+  
+   
 }
 .label-form {
   font-weight: 400;
