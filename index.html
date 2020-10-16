@@ -356,42 +356,71 @@
         </li>
       </ul>
     </div>
-    <form action="#"  method="GET" class="mailing-form">
-    <div class="div-footer-mailing">
-      <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-      <input type="email" name="mailing" id="" placeholder="E-mail" class="input-mailing" required>
-    </div>
-      <button type="submit" class="button-mailing">Подписаться<svg class="mailing-icon"><use href="./img/sprite.svg#icon-telegram"></use></svg></button>
+    <form action="#" method="GET" class="mailing-form">
+      <div class="div-footer-mailing">
+        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+        <input type="email" name="mailing" id="" placeholder="E-mail" class="input-mailing" required>
+      </div>
+      <button type="submit" class="button-mailing">Подписаться<svg class="mailing-icon">
+          <use href="./img/sprite.svg#icon-telegram"></use>
+        </svg></button>
     </form>
   </footer>
   <!-- modal -->
   <div class="backdrop is-hidden" data-backdrop>
     <div class="modal">
-      <button class="btn-modal" data-close-modal><svg class="btn-svg"><use href="./img/sprite.svg#icon-close"></use>></svg></button>
+      
+      <button class="btn-modal" data-close-modal><span class="circle-modal"><svg class="btn-svg">
+        <use href="./img/sprite.svg#icon-vector"></use>
+      </svg></span></button>
       <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
       <form action="#" method="GET" class="modal-form">
-        <label for="name" class="label-form">Имя</label>
-        <input type="text" class="modal-form-input" name="user-name" id="name"  required />
-        <label for="phone" class="label-form">Телефон</label>
-        <input type="tel" class="modal-form-input" name="user-phone" id="phone" required />
-        <label for="email" class="label-form">Почта</label>
-        <input type="email" class="modal-form-input" name="user-email" id="email" required />
+        <div class="div-input">
+          <label for="name" class="label-form">Имя</label>
+
+          <input type="text" class="modal-form-input" name="user-name" id="name" required />
+          <svg class="icon-modal">
+            <use href="./img/sprite.svg#icon-person"></use>
+          </svg>
+        </div>
+        <div class="div-input">
+          <label for="phone" class="label-form">Телефон</label>
+
+          <input type="tel" class="modal-form-input" name="user-phone" id="phone" required />
+          <svg class="icon-modal">
+            <use href="./img/sprite.svg#icon-phone"></use>
+          </svg>
+        </div>
+        <div class="div-input">
+          <label for="email" class="label-form">Почта</label>
+
+          <input type="email" class="modal-form-input" name="user-email" id="email" required />
+          <svg class="icon-modal">
+            <use href="./img/sprite.svg#icon-email"></use>
+          </svg>
+        </div>
         <div class="div-comment">
           <label for="comment" class="label-form">Комментарий</label>
           <textarea name="user-comment" id="comment" class="comment-message" minlength="10" maxlength="80"
             placeholder="Введите текст"></textarea>
         </div>
-        <div class="div-checkbox">
-        <input type="checkbox" value="policy" />
-        <label for="" class="chekbox-modal">Соглашаюсь с рассылкой и принимаю
-          <a href="">Условия договора</a></label>
-        </div>
+        <label class="field">
+          <input type="checkbox" class="chekbox" value="policy">
+          <span class="icon-chekbox"></span>
+          <span class="label-modal">Соглашаюсь с рассылкой и принимаю
+          <a href="">Условия договора</a></span>
+        </label>
+        <!-- <div class="div-checkbox">
+          <input type="checkbox" value="policy" class="chekbox" />
+          <label for="" class="chekbox-modal">Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a></label>
+        </div> -->
         <div class="div-submit">
           <button type="submit" class="submit-button">Отправить</button>
-          </div>
         </div>
-      </form>
     </div>
+    </form>
+  </div>
   </div>
 
   <script src="./js/modal.js"></script>
